@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AVISOS ITI 3 - Inicio</title>
+    <title>AvisosITI3 - Inicio</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <style>
         /* Estilos generales */
@@ -11,8 +11,9 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e9ecef;
+            background-color: #ffffff; /* Fondo blanco */
             color: #495057;
+            transition: background-color 0.3s ease; /* Transición suave del fondo */
         }
 
         .container {
@@ -22,6 +23,7 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease; /* Transición suave de sombras */
         }
 
         header {
@@ -53,7 +55,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 18px;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease; /* Transición suave de color */
         }
 
         nav ul li a:hover, nav ul li a:focus {
@@ -94,6 +96,89 @@
             margin: 0;
             font-size: 14px;
         }
+
+        /* Estilos para la sección de anuncios */
+        .anuncios {
+            margin: 20px 0;
+        }
+
+        .anuncio {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+        }
+
+        .anuncio:hover {
+            transform: translateY(-5px);
+        }
+
+        .anuncio h3 {
+            margin-top: 0;
+        }
+
+        .anuncio p {
+            margin-bottom: 10px;
+        }
+
+        .anuncio .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Transición suave del botón */
+        }
+
+        .anuncio .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para el calendario de eventos */
+        .calendario-eventos {
+            margin: 20px 0;
+        }
+
+        /* Estilos para la suscripción al boletín informativo */
+        .suscripcion {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .suscripcion input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .suscripcion input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del botón de envío */
+        }
+
+        .suscripcion input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para el mapa interactivo */
+        .mapa {
+            margin: 20px 0;
+        }
+
+        .mapa iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -104,7 +189,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="avisos.html">Avisos Recientes</a></li>
                 <li><a href="categorias.html">Categorías</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="about.html" target="_blank">Sobre Nosotros</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
@@ -112,13 +197,40 @@
     <main>
         <section class="container">
             <!-- Aquí puedes colocar el contenido de tu página de inicio -->
-            <h2>¡Bienvenid@ a Avisos ITI3!</h2>
-            <p>Aqui encontraras los avisos más recientes y relevantes para la comunidad Estudiantil de TECNM ITI 3.</p>
-            <!-- Puedes añadir más contenido aquí -->
+            <h2>¡Bienvenido a AvisosITI3!</h2>
+            <p>Encuentra los avisos más recientes y relevantes para la comunidad de ITI3.</p>
+            <!-- Sección de anuncios -->
+            <section class="anuncios">
+                <article class="anuncio">
+                    <h3>Invitación a Evento Gratuito</h3>
+                    <p>¡No te pierdas nuestro próximo evento! Ven y disfruta de una experiencia única.</p>
+                    <p><strong>Fecha:</strong> 20 de Abril, 2024</p>
+                    <p><strong>Lugar:</strong> Parque Central, Ciudad</p>
+                    <a href="evento.html" class="btn">Más Información</a>
+                </article>
+                <!-- Puedes añadir más anuncios aquí -->
+            </section>
+            <!-- Calendario de eventos -->
+            <section class="calendario-eventos">
+                <!-- Aquí puedes integrar un calendario interactivo -->
+            </section>
+            <!-- Suscripción al boletín informativo -->
+            <section class="suscripcion">
+                <h3>Suscríbete a nuestro boletín</h3>
+                <form action="suscripcion.php" method="post">
+                    <input type="email" name="email" placeholder="Ingresa tu correo electrónico">
+                    <input type="submit" value="Suscribirse">
+                </form>
+            </section>
+            <!-- Mapa interactivo -->
+            <section class="mapa">
+                <!-- Aquí puedes integrar un mapa interactivo -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.908116161507!2d-99.0931166850938!3d19.40443098689908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b4b5b6b57%3A0x120a8f9f7c5a6670!2sTecnol%C3%B3gico%20Nacional%20de%20M%C3%A9xico%20Campus%20Iztapalapa%20III!5e0!3m2!1ses-419!2smx!4v1614702057946!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+            </section>
         </section>
     </main>
     <footer>
-        <p> 2024 Avisos ITI3 es un sitio web 100% por alumnos del TECNM Iztapalapa 3 - Todos los derechos son reservados.</p>
+        <p>© 2024 AvisosITI3. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
