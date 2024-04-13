@@ -6,179 +6,7 @@
     <title>AvisosITI3 - Inicio</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* Fondo negro */
-            color: #fff; /* Texto blanco */
-            transition: background-color 0.3s ease;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease; /* Transición suave de sombras */
-        }
-
-        header {
-            background: linear-gradient(45deg, #007bff, #6610f2);
-            color: #fff;
-            padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            padding-left: 20px;
-            font-size: 32px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s ease; /* Transición suave de color */
-        }
-
-        nav ul li a:hover, nav ul li a:focus {
-            color: #ffc107;
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        main h2 {
-            color: #007bff;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        main p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #6c757d;
-        }
-
-        footer {
-            background: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        /* Estilos para la sección de anuncios */
-        .anuncios {
-            margin: 20px 0;
-        }
-
-        .anuncio {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
-        }
-
-        .anuncio:hover {
-            transform: translateY(-5px);
-        }
-
-        .anuncio h3 {
-            margin-top: 0;
-        }
-
-        .anuncio p {
-            margin-bottom: 10px;
-        }
-
-        .anuncio .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease; /* Transición suave del botón */
-        }
-
-        .anuncio .btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Estilos para el calendario de eventos */
-        .calendario-eventos {
-            margin: 20px 0;
-        }
-
-        /* Estilos para la suscripción al boletín informativo */
-        .suscripcion {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .suscripcion input[type="email"] {
-            padding: 10px;
-            margin-right: 10px;
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-        }
-
-        .suscripcion input[type="submit"] {
-            padding: 10px 15px;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease; /* Transición suave del botón de envío */
-        }
-
-        .suscripcion input[type="submit"]:hover {
-            background-color: #218838;
-        }
-
-        /* Estilos para el mapa interactivo */
-        .mapa {
-            margin: 20px 0;
-        }
-
-        .mapa iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-        }
+        body{font-family:'Roboto',sans-serif;margin:0;padding:0;background-color:#000;color:#fff;transition:background-color .3s ease}.container{max-width:960px;margin:0 auto;padding:20px;background-color:#fff;border-radius:10px;box-shadow:0 0 15px rgba(0,0,0,.1);transition:box-shadow .3s ease}header{background:linear-gradient(45deg,#007bff,#6610f2);color:#fff;padding:20px 0;box-shadow:0 4px 6px rgba(0,0,0,.1)}header h1{margin:0;padding-left:20px;font-size:32px}nav ul{list-style-type:none;margin:0;padding:0;text-align:center}nav ul li{display:inline;margin-right:20px}nav ul li a{color:#fff;text-decoration:none;font-size:18px;transition:color .3s ease}nav ul li a:hover,nav ul li a:focus{color:#ffc107;text-decoration:underline}main{padding:20px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1)}main h2{color:#007bff;font-size:28px;margin-bottom:20px}main p{font-size:18px;line-height:1.6;color:#6c757d}footer{background:#343a40;color:#fff;text-align:center;padding:10px 0;position:fixed;bottom:0;left:0;width:100%}footer p{margin:0;font-size:14px}.anuncios{margin:20px 0}.anuncio{background-color:#f8f9fa;border:1px solid #dee2e6;padding:15px;border-radius:5px;margin-bottom:15px;transition:transform .3s ease}.anuncio:hover{transform:translateY(-5px)}.anuncio h3{margin-top:0}.anuncio p{margin-bottom:10px}.anuncio .btn{display:inline-block;background-color:#007bff;color:#fff;padding:10px 15px;text-decoration:none;border-radius:5px;transition:background-color .3s ease}.anuncio .btn:hover{background-color:#0056b3}.calendario-eventos{margin:20px 0}.suscripcion{margin:20px 0;text-align:center}.suscripcion input[type="email"]{padding:10px;margin-right:10px;border:1px solid #ced4da;border-radius:5px}.suscripcion input[type="submit"]{padding:10px 15px;background-color:#28a745;color:#fff;border:none;border-radius:5px;cursor:pointer;transition:background-color .3s ease}.suscripcion input[type="submit"]:hover{background-color:#218838}.mapa{margin:20px 0}.mapa iframe{width:100%;height:300px;border:none}
     </style>
 </head>
 <body>
@@ -196,10 +24,8 @@
     </header>
     <main>
         <section class="container">
-            <!-- Aquí puedes colocar el contenido de tu página de inicio -->
             <h2>¡Bienvenido a AvisosITI3!</h2>
             <p>Encuentra los avisos más recientes y relevantes para la comunidad de ITI3.</p>
-            <!-- Sección de anuncios -->
             <section class="anuncios">
                 <article class="anuncio">
                     <h3>Invitación a Evento Gratuito</h3>
@@ -208,23 +34,18 @@
                     <p><strong>Lugar:</strong> Parque Central, Ciudad</p>
                     <a href="evento.html" class="btn">Más Información</a>
                 </article>
-                <!-- Puedes añadir más anuncios aquí -->
             </section>
-            <!-- Calendario de eventos -->
             <section class="calendario-eventos">
-                <!-- Aquí puedes integrar un calendario interactivo -->
+                <!-- Calendario interactivo -->
             </section>
-            <!-- Suscripción al boletín informativo -->
             <section class="suscripcion">
                 <h3>Suscríbete a nuestro boletín</h3>
-                <form action="URL_DEL_FORMULARIO_DE_GOOGLE" method="post">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdIEAK0qjq52dNaP6pvCPPvN897Q2YNJw-x2ViPOAaVlMmJmg/viewform?usp=sf_link" method="post">
                     <input type="email" name="email" placeholder="Ingresa tu correo electrónico">
                     <input type="submit" value="Suscribirse">
                 </form>
             </section>
-            <!-- Mapa interactivo -->
             <section class="mapa">
-                <!-- Aquí puedes integrar un mapa interactivo -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.908116161507!2d-99.0931166850938!3d19.40443098689908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b4b5b6b57%3A0x120a8f9f7c5a6670!2sTecnol%C3%B3gico%20Nacional%20de%20M%C3%A9xico%20Campus%20Iztapalapa%20III!5e0!3m2!1ses-419!2smx!4v1614702057946!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
             </section>
         </section>
